@@ -1,6 +1,6 @@
 import { sequelize } from '../config/database';
 import { UserModel } from '../modules/users/model/UserModel';
-import request from 'supertest';
+import * as request from 'supertest';
 import { app } from '../app';
 
 
@@ -23,7 +23,7 @@ describe('User Registration', () => {
 
   it('should return 200 OK when signup request is valid', async () => {
     const response = await postValidator();
-    expect(response.status).toBe(500);
+    expect(response.status).toBe(200);
   });
 
   it('should return success message when signup request is valid', async () => {
