@@ -1,6 +1,6 @@
 import { sequelize } from '../config/database';
 import { UserModel } from '../modules/users/model/UserModel';
-import * as request from 'supertest';
+import request from 'supertest';
 import { app } from '../app';
 
 
